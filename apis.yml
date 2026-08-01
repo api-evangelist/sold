@@ -1,7 +1,23 @@
 aid: sold
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/sold.png
 name: Sold *
-description: 'Sold * is a company surfaced as a portfolio company of gv and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Sold * was a consumer resale service (a mobile app that sold your unwanted
+  items on your behalf, handling pricing, listing, and fulfillment). Backed by GV, the Sold team
+  was acqui-hired by Dropbox; the service was shut down and no longer accepts items. The homepage
+  at usesold.com now serves only an acquisition/shutdown notice. No developer portal, API,
+  documentation, or well-known surface exists (all api/developer/docs subdomains fail to resolve;
+  /.well-known/*, /llms.txt, and /openapi.json return 404). Sector: consumer.'
 url: https://raw.githubusercontent.com/api-evangelist/sold/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +27,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
+x-status: defunct
+x-acquired-by: dropbox
 tags:
 - Company
 - Consumer
+- Resale
+- Marketplace
+- Mobile App
+- Defunct
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,4 +46,9 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: http://usesold.com
+  url: https://usesold.com
+x-enrichment:
+  date: '2026-07-21'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
